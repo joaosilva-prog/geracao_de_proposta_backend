@@ -1,0 +1,86 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "GeracaoPropostaOrigo",
+    "version": "1.0"
+  },
+  "paths": {
+    "/proposta": {
+      "post": {
+        "tags": [
+          "GeracaoPropostaOrigo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Proposta"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ClasseCliente": {
+        "enum": [
+          30,
+          50,
+          100
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Proposta": {
+        "required": [
+          "classeCliente",
+          "descontoMes",
+          "kwhUnit",
+          "razaoSocial",
+          "totalConsumo"
+        ],
+        "type": "object",
+        "properties": {
+          "razaoSocial": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "totalConsumo": {
+            "minLength": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "classeCliente": {
+            "$ref": "#/components/schemas/ClasseCliente"
+          },
+          "placaCliente": {
+            "minLength": 0,
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "descontoMes": {
+            "maximum": 100,
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "kwhUnit": {
+            "minLength": 0,
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
