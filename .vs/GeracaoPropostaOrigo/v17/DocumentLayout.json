@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\services\\geracaodeproposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\services\\geracaodeproposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\model\\proposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\model\\proposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\logs\\customloggerproviderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\logs\\customloggerproviderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\geracaopropostaorigo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\geracaopropostaorigo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\dtos\\propostadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\dtos\\propostadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\logs\\customloggerprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\logs\\customloggerprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\logs\\customlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,32 +39,8 @@
       "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\logs\\logs.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\logs\\customloggerprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\logs\\customloggerprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\logs\\customloggerproviderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\logs\\customloggerproviderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\services\\geracaodeproposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\services\\geracaodeproposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\geracaopropostaorigo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\geracaopropostaorigo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\model\\proposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\model\\proposta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\enums\\classecliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\enums\\classecliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|c:\\temp\\ws-visualstudio\\geracaopropostaorigo\\geracaopropostaorigo\\dtos\\propostadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EC34997-DA87-4CD1-9D38-84784F51AD54}|GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj|solutionrelative:geracaopropostaorigo\\dtos\\propostadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "logs.txt",
               "DocumentMoniker": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\Logs\\logs.txt",
               "RelativeDocumentMoniker": "GeracaoPropostaOrigo\\Logs\\logs.txt",
@@ -66,12 +66,11 @@
               "RelativeToolTip": "GeracaoPropostaOrigo\\Logs\\logs.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-09-05T23:05:18.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T23:05:18.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "CustomLogger.cs",
               "DocumentMoniker": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\Logs\\CustomLogger.cs",
               "RelativeDocumentMoniker": "GeracaoPropostaOrigo\\Logs\\CustomLogger.cs",
@@ -79,12 +78,11 @@
               "RelativeToolTip": "GeracaoPropostaOrigo\\Logs\\CustomLogger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T22:01:32.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T22:01:32.47Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "CustomLoggerProvider.cs",
               "DocumentMoniker": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\Logs\\CustomLoggerProvider.cs",
               "RelativeDocumentMoniker": "GeracaoPropostaOrigo\\Logs\\CustomLoggerProvider.cs",
@@ -96,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "CustomLoggerProviderConfiguration.cs",
               "DocumentMoniker": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\Logs\\CustomLoggerProviderConfiguration.cs",
               "RelativeDocumentMoniker": "GeracaoPropostaOrigo\\Logs\\CustomLoggerProviderConfiguration.cs",
@@ -104,11 +102,12 @@
               "RelativeToolTip": "GeracaoPropostaOrigo\\Logs\\CustomLoggerProviderConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T21:53:59.303Z"
+              "WhenOpened": "2025-09-05T21:53:59.303Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "GeracaoPropostaOrigo.csproj",
               "DocumentMoniker": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj",
               "RelativeDocumentMoniker": "GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj",
@@ -116,60 +115,63 @@
               "RelativeToolTip": "GeracaoPropostaOrigo\\GeracaoPropostaOrigo.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-23T20:14:37.645Z"
+              "WhenOpened": "2025-08-23T20:14:37.645Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\Program.cs",
               "RelativeDocumentMoniker": "GeracaoPropostaOrigo\\Program.cs",
               "ToolTip": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\Program.cs",
               "RelativeToolTip": "GeracaoPropostaOrigo\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFUAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-15T12:42:43.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Proposta.cs",
               "DocumentMoniker": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\Model\\Proposta.cs",
               "RelativeDocumentMoniker": "GeracaoPropostaOrigo\\Model\\Proposta.cs",
               "ToolTip": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\Model\\Proposta.cs",
               "RelativeToolTip": "GeracaoPropostaOrigo\\Model\\Proposta.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA5wBoAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T00:09:19.449Z"
+              "WhenOpened": "2025-09-05T00:09:19.449Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "PropostaDto.cs",
               "DocumentMoniker": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\DTOs\\PropostaDto.cs",
               "RelativeDocumentMoniker": "GeracaoPropostaOrigo\\DTOs\\PropostaDto.cs",
               "ToolTip": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\DTOs\\PropostaDto.cs",
               "RelativeToolTip": "GeracaoPropostaOrigo\\DTOs\\PropostaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-23T02:55:36.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "GeracaoDeProposta.cs",
               "DocumentMoniker": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\Services\\GeracaoDeProposta.cs",
               "RelativeDocumentMoniker": "GeracaoPropostaOrigo\\Services\\GeracaoDeProposta.cs",
               "ToolTip": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\Services\\GeracaoDeProposta.cs",
               "RelativeToolTip": "GeracaoPropostaOrigo\\Services\\GeracaoDeProposta.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwDUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T01:34:05.716Z"
+              "WhenOpened": "2025-08-23T01:34:05.716Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ClasseCliente.cs",
               "DocumentMoniker": "C:\\temp\\ws-visualstudio\\GeracaoPropostaOrigo\\GeracaoPropostaOrigo\\Enums\\ClasseCliente.cs",
               "RelativeDocumentMoniker": "GeracaoPropostaOrigo\\Enums\\ClasseCliente.cs",

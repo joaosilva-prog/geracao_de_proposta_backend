@@ -64,8 +64,7 @@
           "placaCliente": {
             "minLength": 0,
             "type": "number",
-            "format": "double",
-            "nullable": true
+            "format": "double"
           },
           "descontoMes": {
             "maximum": 100,

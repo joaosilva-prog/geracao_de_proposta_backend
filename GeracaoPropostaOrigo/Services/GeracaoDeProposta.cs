@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Text;
 using GeracaoPropostaOrigo.DTOs;
 using GeracaoPropostaOrigo.Model;
 using iTextSharp.text;
@@ -33,19 +34,19 @@ public class GeracaoDeProposta
                     form.SetFieldProperty($"Text{i}", "borderwidth", 0f, null);
 
                     // Ajusta propriedades do campo existente
-                    form.SetFieldProperty($"Text{i}", "textsize", 22f, null);
+                    form.SetFieldProperty($"Text{i}", "textsize", 21f, null);
                     form.SetFieldProperty($"Text{i}", "textcolor", BaseColor.BLACK, null);
                     form.SetFieldProperty($"Text{i}", "font", BaseFont.CreateFont(BaseFont.TIMES_BOLD, BaseFont.CP1252, BaseFont.NOT_EMBEDDED), null);
                 }
 
                 // Define o valor
-                form.SetField("Text1", propostaFinal.RazaoSocial);
-                form.SetField("Text2", "R$" + propostaFinal.ValorSemOrigoMensal.ToString("F2"));
-                form.SetField("Text3", "R$" + propostaFinal.ValorSemOrigoAnual.ToString("F2"));
-                form.SetField("Text4", "R$" + propostaFinal.ValorComOrigoMensal.ToString("F2"));
-                form.SetField("Text5", "R$" + propostaFinal.ValorComOrigoAnual.ToString("F2"));
-                form.SetField("Text6", "R$" + propostaFinal.EconomiaMensal.ToString("F2"));
-                form.SetField("Text7", "R$" + propostaFinal.EconomiaAnual.ToString("F2"));
+                form.SetField("Text1", RemoverAcentos(propostaFinal.RazaoSocial));
+                form.SetField("Text2", propostaFinal.ValorSemOrigoMensal.ToString("C", new CultureInfo("pt-BR")));
+                form.SetField("Text3", propostaFinal.ValorSemOrigoAnual.ToString("C", new CultureInfo("pt-BR")));
+                form.SetField("Text4", propostaFinal.ValorComOrigoMensal.ToString("C", new CultureInfo("pt-BR")));
+                form.SetField("Text5", propostaFinal.ValorComOrigoAnual.ToString("C", new CultureInfo("pt-BR")));
+                form.SetField("Text6", propostaFinal.EconomiaMensal.ToString("C", new CultureInfo("pt-BR")));
+                form.SetField("Text7", propostaFinal.EconomiaAnual.ToString("C", new CultureInfo("pt-BR")));
 
                 // Achata para que o campo vire texto fixo e a caixa desapareça
                 stamper.FormFlattening = true;
@@ -60,13 +61,19 @@ public class GeracaoDeProposta
     {
         decimal valorSemOrigoMensal;
 
+        string totalString = prop.TotalConsumo.ToString(CultureInfo.InvariantCulture);
+        decimal total = decimal.Parse(totalString);
+
         if (prop.PlacaCliente == 0)
         {
-            valorSemOrigoMensal = (prop.TotalConsumo - ((int)prop.ClasseCliente)) * prop.KwhUnit;
+            valorSemOrigoMensal = (total - (int)prop.ClasseCliente) * prop.KwhUnit;
         }
         else
         {
-            valorSemOrigoMensal = (decimal)((prop.TotalConsumo - ((int)prop.ClasseCliente) - prop.PlacaCliente) * prop.KwhUnit);
+            string placaString = prop.PlacaCliente.ToString(CultureInfo.InvariantCulture);
+            decimal placa = decimal.Parse(placaString);
+
+            valorSemOrigoMensal = (total - (int)prop.ClasseCliente - placa) * prop.KwhUnit;
         }
 
         var descontoMes = (prop.DescontoMes / 100) * valorSemOrigoMensal;
@@ -82,5 +89,21 @@ public class GeracaoDeProposta
         var economiaAnual = valorSemOrigoAnual - valorComOrigoAnual;
 
         return new PropostaDto(prop.RazaoSocial, valorSemOrigoMensal, valorComOrigoMensal, valorSemOrigoAnual, valorComOrigoAnual, economiaMensal, economiaAnual);
+    }
+
+    public static string RemoverAcentos(string texto)
+    {
+        if (string.IsNullOrEmpty(texto)) return texto;
+
+        var normalized = texto.Normalize(NormalizationForm.FormD);
+        var sb = new StringBuilder();
+
+        foreach (var c in normalized)
+        {
+            if (CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)
+                sb.Append(c);
+        }
+
+        return sb.ToString().Normalize(NormalizationForm.FormC);
     }
 }

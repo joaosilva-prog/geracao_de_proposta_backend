@@ -16,7 +16,7 @@ public class Proposta
     public ClasseCliente ClasseCliente { get; set; }
 
     [MinLength(0, ErrorMessage = "Erro, valor de Placa do Cliente inválido.")]
-    public decimal? PlacaCliente { get; set; }
+    public decimal PlacaCliente { get; set; }
 
     [Required(ErrorMessage = "Erro, este campo é obrigatório.")]
     [Range(0, 100, ErrorMessage = "Erro, valor de Desconto do Mês inválido.")]
