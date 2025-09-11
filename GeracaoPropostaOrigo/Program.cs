@@ -26,11 +26,13 @@ builder.Logging.AddProvider(new CustomLoggerProvider(new CustomLoggerProviderCon
     LogLevel = LogLevel.Information
 }));
 
+var frontendUrl = builder.Configuration["FrontendUrl"];
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: Origins, policy =>
     {
-        policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+        policy.WithOrigins(frontendUrl).AllowAnyHeader().AllowAnyMethod();
     });
 });
 
@@ -57,7 +59,7 @@ app.Use(async (context, next) =>
     catch (Exception ex)
     {
         var logger = context.RequestServices.GetRequiredService<ILogger<Program>>();
-        logger.LogError(ex, "Erro inesperado ao processar a requisição. " + DateTime.Now);
+        logger.LogError(ex, "Erro inesperado ao processar a requisiÃ§Ã£o. " + DateTime.Now);
         context.Response.StatusCode = 500;
     }
 });
@@ -80,7 +82,7 @@ app.MapPost("/proposta", async ([FromBody] Proposta dadosBrutos, IValidator<Prop
 
     if (!validation.IsValid)
     {
-        logger.LogError("Dados inválidos do cliente: " + dadosBrutos.RazaoSocial + " " + DateTime.Now);
+        logger.LogError("Dados invÃ¡lidos do cliente: " + dadosBrutos.RazaoSocial + " " + DateTime.Now);
         return Results.BadRequest();
     }
     var result = await geracao.GerarPdf(dadosBrutos);
