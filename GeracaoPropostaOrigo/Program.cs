@@ -11,6 +11,7 @@ using GeracaoPropostaOrigo.DTOs;
 using GeracaoPropostaOrigo.Services;
 using Microsoft.AspNetCore.Http.HttpResults;
 using GeracaoPropostaOrigo.Logs;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -49,6 +50,16 @@ builder.Services.AddRateLimiter(limiterOptions =>
 });
 
 var app = builder.Build();
+
+var supportedCultures = new[] { new CultureInfo("pt-BR") };
+var localizationOptions = new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture("pt-BR"),
+    SupportedCultures = supportedCultures,
+    SupportedUICultures = supportedCultures
+};
+
+app.UseRequestLocalization(localizationOptions);
 
 app.Use(async (context, next) =>
 {
