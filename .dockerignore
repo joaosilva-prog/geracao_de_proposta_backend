@@ -1,0 +1,13 @@
+# Ignora arquivos e pastas gerados pelo processo de build local
+**/bin/
+**/obj/
+
+# Ignora configurações de IDE e usuário
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Ignora arquivos de sistema operacional
+.DS_Store
+Thumbs.db
