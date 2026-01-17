@@ -27,18 +27,24 @@ public class GeracaoDeProposta
                 var form = stamper.AcroFields;
 
                 var formFields = reader.AcroFields.Fields;
-
+                
+                stamper.Writer.SetPdfVersion(PdfWriter.PDF_VERSION_1_7);
+                stamper.AcroFields.GenerateAppearances = true;
+                
                 for (int i = 1; i <= formFields.Count; i++)
                 {
                     form.SetFieldProperty($"Text{i}", "bordercolor", BaseColor.WHITE, null);
                     form.SetFieldProperty($"Text{i}", "borderwidth", 0f, null);
-
+                    form.SetFieldProperty($"Text{i}", "backgroundcolor", null, null);
+                
                     // Ajusta propriedades do campo existente
                     form.SetFieldProperty($"Text{i}", "textsize", 21f, null);
                     form.SetFieldProperty($"Text{i}", "textcolor", BaseColor.BLACK, null);
                     form.SetFieldProperty($"Text{i}", "font", BaseFont.CreateFont(BaseFont.TIMES_BOLD, BaseFont.CP1252, BaseFont.NOT_EMBEDDED), null);
                 }
-
+                
+                var pctDesconto = (propostaFinal.EconomiaMensal / propostaFinal.ValorSemOrigoMensal) * 100;
+                
                 // Define o valor
                 form.SetField("Text1", RemoverAcentos(propostaFinal.RazaoSocial));
                 form.SetField("Text2", propostaFinal.ValorSemOrigoMensal.ToString("C", new CultureInfo("pt-BR")));
@@ -47,7 +53,8 @@ public class GeracaoDeProposta
                 form.SetField("Text5", propostaFinal.ValorComOrigoAnual.ToString("C", new CultureInfo("pt-BR")));
                 form.SetField("Text6", propostaFinal.EconomiaMensal.ToString("C", new CultureInfo("pt-BR")));
                 form.SetField("Text7", propostaFinal.EconomiaAnual.ToString("C", new CultureInfo("pt-BR")));
-
+                form.SetField("Text8", pctDesconto.ToString("F2", new CultureInfo("pt-BR")));
+                
                 // Achata para que o campo vire texto fixo e a caixa desapareça
                 stamper.FormFlattening = true;
             }
